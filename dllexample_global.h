@@ -1,0 +1,12 @@
+#ifndef DLLEXAMPLE_GLOBAL_H
+#define DLLEXAMPLE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DLLEXAMPLE_LIBRARY)
+#  define DLLEXAMPLE_EXPORT Q_DECL_EXPORT
+#else
+#  define DLLEXAMPLE_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DLLEXAMPLE_GLOBAL_H
